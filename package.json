@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.391.0",
+    "aws-sdk": "^2.1437.0",
+    "pg": "^8.11.3",
+    "sequelize": "^6.32.1"
+  }
+}
