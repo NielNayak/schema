@@ -1,4 +1,5 @@
 const db1 = require("./app");
+const secret = require("./secret");
 const Sequelize = require("sequelize");
 let sequelize,
   schema,
@@ -11,8 +12,8 @@ if (config == true) {
 } else {
   sequelize = new Sequelize("", "", "", { dialect: "postgres" });
   sequelize.beforeConnect(async (dbConfig) => {
-    let secret1 = await db1.test();
-    console.log("Secret", secret1);
+    let secret1 = secret.test();
+    //console.log("Secret", secret1);
     dbConfig.username = secret1.username;
     dbConfig.password = secret1.password;
     dbConfig.host = secret1.host;

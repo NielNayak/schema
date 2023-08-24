@@ -43,7 +43,7 @@ let test = async () => {
       }
 
       // console log in case of error
-      console.log(secret);
+      //console.log(secret);
     });
   });
 };
