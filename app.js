@@ -1,7 +1,9 @@
+const config = require("./config.json");
+
 var AWS = require("aws-sdk"),
   region = "ap-south-1",
   secret,
-  secretName = "test/Demo", // You can load this secret based on the environment
+  secretName = config.prod.name, // You can load this secret based on the environment
   decodedBinarySecret;
 
 // Create a Secrets Manager client

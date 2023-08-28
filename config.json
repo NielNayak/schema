@@ -1,0 +1,5 @@
+{
+  "dev": { "name": "test/Demo" },
+  "itg": { "name": "test/Demo1" },
+  "prod": { "name": "test/Demo2" }
+}

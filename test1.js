@@ -18,7 +18,7 @@ if (config == true) {
     dbConfig.password = secret1.password;
     dbConfig.host = secret1.host;
     dbConfig.port = secret1.port;
-    schema = secret1.schema;
+    schema = await db1.test();
     console.log(schema);
     dbConfig.dialectOptions = {
       useUTC: true,
